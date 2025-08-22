@@ -23,11 +23,6 @@ type SanityPost = {
   content?: string;
 };
 
-// Fonction utilitaire pour normaliser les slugs (gérer les différents types d'apostrophes)
-function normalizeSlug(slug: string): string {
-  return slug.replace(/['']/g, "'");
-}
-
 // Fonction pour générer les métadonnées
 export async function generateMetadata({
   params,

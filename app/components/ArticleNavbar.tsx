@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function ArticleNavbar() {
-  const pathname = usePathname();
-
   return (
     <header>
       <nav className="max-w-3xl mx-auto pt-6 pb-4 px-4 flex items-center justify-between">
@@ -93,5 +90,3 @@ export default function ArticleNavbar() {
     </header>
   );
 }
-
-
