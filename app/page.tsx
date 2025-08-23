@@ -45,16 +45,16 @@ export default async function Home() {
               className="lucide w-4 h-4"
               strokeWidth="1.5"
             ></svg>
-            Data Engineering
+            Data Engineering & Web Development
           </span>
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white mb-4">
-            Après une école de commerce, j&apos;ai décidé de plonger dans le
-            monde de la data
+            Data Engineer passionné par la technologie et l&apos;innovation
           </h1>
           <p className="text-base sm:text-lg text-zinc-200 max-w-xl">
-            Data engineer passionné par la data et le web en général.
-            J&apos;aime apprendre et partager, n&apos;hésite pas à venir vers
-            moi.
+            Après une école de commerce, j&apos;ai plongé dans le monde de la
+            data. Spécialisé en data engineering, analytics et développement
+            web. J&apos;aime apprendre, partager et créer des solutions
+            innovantes.
           </p>
         </div>
       </section>
@@ -72,7 +72,7 @@ export default async function Home() {
             id="recent-posts-heading"
             className="text-lg font-semibold tracking-tight text-zinc-900"
           >
-            Mes derniers articles
+            Mes derniers articles sur la data
           </h3>
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto text-left">
             {recentArticles.map((article: SanityPost) => (
@@ -273,7 +273,7 @@ export default async function Home() {
                         POLARYS — Consultant Data
                       </h4>
                       <span className="inline-flex items-center gap-1 text-sm text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-                        Oct 2024 - Mars 2025
+                        Oct 2023 - Mars 2025
                       </span>
                     </div>
                     <p className="text-sm text-zinc-600 leading-relaxed mb-4">

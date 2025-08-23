@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackgroundAccents from "./components/BackgroundAccents";
+import Metadata from "./components/Metadata";
+import VercelAnalytics from "./components/VercelAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +23,29 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>ConnectLab — Modern websites for small businesses</title>
+
+        {/* Métadonnées personnalisées */}
+        <Metadata />
+
+        {/* Favicon et icônes */}
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
       </head>
       <body
         className={`${inter.variable} antialiased selection:bg-emerald-300 selection:text-zinc-900 text-zinc-900 bg-zinc-50`}
@@ -58,6 +82,9 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Vercel Analytics */}
+        <VercelAnalytics />
       </body>
     </html>
   );
